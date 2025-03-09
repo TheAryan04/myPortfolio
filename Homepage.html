@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Mehta | Full-Stack Developer</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@400;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
+            background: #0d1117;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        header {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(90deg, #0d1117, #1e293b);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: glowText 2s infinite alternate, fadeIn 1.5s ease-in-out;
+            z-index: 2;
+        }
+        @keyframes glowText {
+            from { text-shadow: 0 0 20px #58a6ff, 0 0 30px #58a6ff, 0 0 40px #58a6ff; }
+            to { text-shadow: 0 0 30px #f8d847, 0 0 40px #f8d847, 0 0 50px #f8d847; }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-100px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        header h1 {
+            font-size: 80px;
+            font-family: 'Orbitron', sans-serif;
+            animation: slideUp 2s ease-out;
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(100px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(22, 27, 34, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(88, 166, 255, 0.5);
+            animation: fadeIn 1s ease-in-out;
+        }
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            color: #58a6ff;
+            text-align: center;
+            border-bottom: 2px solid #f8d847;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .cta {
+            background: linear-gradient(90deg, #58a6ff, #f8d847);
+            color: #0d1117;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            display: block;
+            width: fit-content;
+            margin-left: auto;
+            transition: 0.3s;
+            font-family: 'Orbitron', sans-serif;
+        }
+        .cta:hover {
+            background: linear-gradient(90deg, #f8d847, #58a6ff);
+            transform: scale(1.1);
+        }
+        .section {
+            margin-bottom: 40px;
+            text-align: center;
+            animation: slideUp 1.2s ease-in-out;
+        }
+        footer {
+            background: rgba(13, 17, 23, 0.9);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-top: 2px solid #58a6ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aryan Mehta <br> Full-Stack Developer</h1>
+    </header>
+    
+    <div class="container">
+        <section class="section">
+            <h2>Who Am I?</h2>
+            <p>I'm <strong>Aryan Mehta</strong>, a Full-Stack Developer driven by an insatiable passion for creating seamless, high-performance applications. From designing immersive front-end experiences to architecting scalable and secure backend infrastructures, I thrive on solving complex problems through code.</p>
+            <p>My journey into development was fueled by a deep curiosity about how the digital world functions. I love breaking things down, understanding their mechanics, and rebuilding them with improved efficiency and elegance. Whether it's crafting pixel-perfect UIs, optimizing database queries for maximum efficiency, or implementing real-time data streaming, I ensure every project I touch is built for both performance and scalability.</p>
+            <p>Beyond just writing code, I continuously explore new technologies, refine my existing skills, and stay up-to-date with industry best practices. I believe that technology is ever-evolving, and the best developers are those who evolve with it.</p>
+            <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Coding GIF" class="coding-gif">
+        </section>
+        
+        <section class="section">
+            <h2>Skills</h2>
+            <p>🔹 JavaScript, Node.js, React.js, Express.js</p>
+            <p>🔹 MongoDB, MySQL, API Development</p>
+            <p>🔹 Cloudinary, RESTful APIs, WebSockets</p>
+            <p>🔹 Git, Deployment, Performance Optimization</p>
+        </section>
+        
+        <section class="section">
+            <h2>Projects</h2>
+            <p>🚀 Cutting-edge applications designed for impact.</p>
+            <div class="project">
+                <h3>Natcred (Microsoft Hackathon Finalist)</h3>
+                <p>Developed a scalable backend system for real-time data processing. Recognized in the top 36 teams.</p>
+                <a href="https://github.com/UTKARSHJHA-2005/NATCRED" target="_blank" class="cta">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Instagram Clone (MERN + Real-Time Features)</h3>
+                <p>Developed a **fully functional Instagram clone** with real-time messaging, story updates, and image uploads—just like the original platform. Integrated **Socket.io for real-time interactions, Cloudinary for image storage, and MongoDB for scalable data management**.</p>
+                <a href="#" target="_blank" class="cta">View Project</a>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Why Hire Me?</h2>
+            <p><strong>🔹 Beyond Just Coding:</strong> I don’t just write code—I architect complete, scalable, and maintainable solutions. I approach projects with an engineer’s precision, ensuring that every line of code serves a purpose and contributes to the overall efficiency of the application.</p>
+            <p><strong>🔹 Creative & Analytical:</strong> I combine logical problem-solving skills with creative thinking to build user-centric applications that are not only functional but also visually engaging. I leverage animations, micro-interactions, and UX best practices to create intuitive and immersive experiences.</p>
+            <p><strong>🔹 Full-Stack Mastery:</strong> My expertise spans the entire software development lifecycle. From setting up robust RESTful APIs in Node.js and Express to creating dynamic front-end applications with React, I ensure smooth communication between the client and server.</p>
+            <p><strong>🔹 Performance Optimization:</strong> I deeply understand how critical performance is for modern applications. I optimize database queries, implement caching mechanisms, and ensure that every API call is as efficient as possible, reducing latency and improving user experience.</p>
+            <p><strong>🔹 Real-Time Application Development:</strong> Having worked extensively with WebSockets, I build applications that provide real-time updates, whether it's live chat, instant notifications, or collaborative workspaces.</p>
+            <p><strong>🔹 Passion & Dedication:</strong> I don’t see coding as just a job—it's my passion. I take ownership of my work, continuously improve my skills, and always strive to deliver high-quality, future-proof solutions.</p>
+            <p>If you're looking for a developer who is <strong>meticulous, dedicated, and constantly pushing the boundaries of what's possible with web technologies</strong>, then let’s connect!</p>
+            <a href="mailto:aaryanmehta04@gmail.com" class="cta">Hire Me</a>
+        </section>
+    </div>
+    
+    <footer>&copy; 2025 Aryan Mehta. All rights reserved.</footer>
+</body>
+</html>
